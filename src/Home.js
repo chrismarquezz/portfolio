@@ -10,10 +10,12 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const savedMode = localStorage.getItem("darkMode");
-      if (savedMode) return JSON.parse(savedMode);
-      return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (typeof window === 'undefined') {
+      return false;
+    }
+    const savedMode = localStorage.getItem("darkMode");
+    if (savedMode !== null) {
+      return JSON.parse(savedMode);
     }
     return false;
   });
