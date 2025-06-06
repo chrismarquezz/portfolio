@@ -7,7 +7,7 @@ export const experienceData = [
     company: "ClassLink",
     date: "June 2025 - Present",
     description: [
-      "Architecting a system to ingest and process roster data for millions of student and teacher accounts using RESTful APIs, and implementing a secure SSO login flow with OAuth2/OIDC.",    
+      "Architecting a system to ingest and process roster data for millions of student and teacher accounts using RESTful APIs, and implementing a secure SSO login flow with OAuth2/OIDC",    
       "Building a responsive and intuitive user interface from the ground up with React and Tailwind CSS, all supported by a scalable AWS-based backend",
       "Creating comprehensive API reference documentation and setup guides to streamline future partner integrations and ensure the project's long-term success",
     ],

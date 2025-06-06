@@ -15,18 +15,18 @@ export const projectsData = [
     id: "coming-soon",
     title: "Coming Soon",
     description: "A placeholder project for future development.",
-    liveUrl: "https://your-coming-soon-url.com",
-    repoUrl: "https://github.com/your-username/chess-xp-repo",
+    liveUrl: "",
+    repoUrl: "",
     image: comingSoonImage,
-    technologies: ["HTML", "CSS", "JavaScript"]
+    technologies: []
   },
   {
     id: "coming-soon",
     title: "Coming Soon",
     description: "A placeholder project for future development.",
-    liveUrl: "https://your-coming-soon-url.com",
-    repoUrl: "https://github.com/your-username/chess-xp-repo",
+    liveUrl: "",
+    repoUrl: "",
     image: comingSoonImage,
-    technologies: ["HTML", "CSS", "JavaScript"]
+    technologies: []
   }
 ];

@@ -40,7 +40,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="fixed top-0 left-0 right-0 z-50 bg-gray-50/90 dark:bg-gray-800/90 shadow-md backdrop-blur-sm"
+      className="fixed top-0 left-0 right-0 z-50 bg-gray-50/90 dark:bg-slate-800/90 shadow-md backdrop-blur-sm"
     >
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -88,7 +88,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-gray-900 shadow-lg"
+            className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-slate-900 shadow-lg"
           >
             <div className="flex flex-col items-center space-y-6 py-8">
               {navLinks.map((link) => (

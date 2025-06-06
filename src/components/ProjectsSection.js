@@ -23,7 +23,7 @@ export default function ProjectsSection() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        My Projects
+        Projects
       </motion.h2>
       {projectsData.length > 0 ? (
         <motion.div
