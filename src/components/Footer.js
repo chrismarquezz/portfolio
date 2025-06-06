@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const socialLinks = [
-   
    { 
      icon: FaEnvelope, 
      href: 'mailto:cmarquez@villanova.edu', 
@@ -28,7 +27,7 @@ export default function Footer() {
 
   return (
     <motion.footer 
-      className="text-center py-10 px-4 text-sm text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700"
+      className="text-center py-10 px-4 text-sm text-gray-600 dark:text-gray-400 border-t border-gray-200 dark:border-slate-700"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 export default function ContactSection() {
   return (
-<section id="contact" className="py-20 md:py-28 px-4 bg-gray-50 dark:bg-gray-800">
+<section id="contact" className="py-20 md:py-28 px-4 bg-gray-50 dark:bg-slate-800">
       <motion.div
         className="max-w-2xl mx-auto text-center"
         initial={{ opacity: 0, y: 30 }}

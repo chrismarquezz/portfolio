@@ -17,7 +17,7 @@ const itemVariants = {
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-20 md:py-28 px-4 bg-gray-50 dark:bg-gray-800">
+    <section id="experience" className="py-20 md:py-28 px-4 bg-gray-50 dark:bg-slate-800">
       <div className="max-w-4xl mx-auto">
         <motion.h2
           className="text-3xl sm:text-4xl font-bold text-center mb-12 md:mb-16 text-gray-900 dark:text-white"
@@ -44,9 +44,7 @@ export default function ExperienceSection() {
               transition={{ duration: 0.8, ease: 'easeOut' }}
             >
               <div className="relative flex flex-col items-center flex-shrink-0 w-12">
-                
-                {/* === THE CHANGE IS ON THIS LINE === */}
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white flex items-center justify-center ring-4 ring-white dark:ring-gray-800 z-10">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white flex items-center justify-center ring-4 ring-white dark:ring-slate-800 z-10">
                   {item.institutionLogo ? (
                     <img src={item.institutionLogo} alt={`${item.company} logo`} className="w-7 h-7 object-contain" />
                   ) : (
@@ -56,7 +54,7 @@ export default function ExperienceSection() {
                   )}
                 </div>
                 {index < experienceData.length - 1 && (
-                  <div className="absolute top-12 left-1/2 -translate-x-1/2 w-0.5 h-full bg-blue-200 dark:bg-blue-800"></div>
+                  <div className="absolute top-12 left-1/2 -translate-x-1/2 w-0.5 h-full bg-blue-200 dark:bg-slate-700"></div>
                 )}
               </div>
 

@@ -10,7 +10,7 @@ export default function ProjectCard({ project }) {
   return (
     <motion.div
       variants={cardVariants}
-      className="rounded-xl overflow-hidden shadow-lg bg-gray-50 dark:bg-gray-800 flex flex-col group transition-shadow duration-300 ease-in-out hover:shadow-xl hover:shadow-blue-500/40 dark:hover:shadow-blue-400/30"
+      className="rounded-xl overflow-hidden shadow-lg bg-gray-50 dark:bg-slate-800 flex flex-col group transition-shadow duration-300 ease-in-out hover:shadow-xl"
       whileHover={{ scale: 1.03 }}
       transition={{ type: "spring", stiffness: 300, damping: 15 }}
     >
@@ -61,7 +61,7 @@ export default function ProjectCard({ project }) {
             href={project.repoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md bg-gray-700 text-white hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-500 dark:focus:ring-gray-700 transition-colors duration-300"
+            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-md bg-gray-700 text-white hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 dark:bg-slate-600 dark:hover:bg-slate-500 dark:focus:ring-slate-700 transition-colors duration-300"
           >
             <FaGithub size="18" />
             View Code

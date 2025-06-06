@@ -13,7 +13,7 @@ export default function HeroSection() {
       >
         <img
           src={profileImage}
-          alt="Chris Marquez"
+          alt="A professional headshot of Chris Marquez"
           className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover shadow-2xl border-4 border-white dark:border-gray-700"
         />
       </motion.div>
@@ -42,7 +42,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.7, ease: "easeOut" }}
         >
-          A driven computer science student at Villanova University, seeking full-time opportunities for May 2026. I'm currently applying my skills to build real-world applications as a Software Engineering Intern at ClassLink.
+          A driven computer science student at Villanova University, seeking full-time opportunities for May 2026. I'm currently applying my skills to build a real-world application as a Software Engineering Intern at ClassLink.
         </motion.p>
         
         <motion.div
@@ -52,8 +52,8 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.9, ease: "easeOut" }}
         >
           <a
-            href="/Resume - Chris Marquez.pdf"
-            download="Resume - Chris Marquez.pdf"
+            href="/Resume-Chris-Marquez.pdf"
+            download="Resume-Chris-Marquez.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 px-8 py-3 text-lg font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl motion-safe:hover:scale-105"

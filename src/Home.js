@@ -28,7 +28,7 @@ export default function Home() {
   }, [darkMode]);
 
   return (
-    <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white transition-colors duration-300 ease-in-out">
+    <div className="bg-white text-gray-900 dark:bg-slate-900 dark:text-white transition-colors duration-300 ease-in-out">
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <main>
         <HeroSection />
