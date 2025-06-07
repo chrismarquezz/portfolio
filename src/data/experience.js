@@ -15,6 +15,17 @@ export const experienceData = [
     institutionLogo: ClassLinkLogo, 
   },
   {
+    role: "Computer Science Peer Tutor",
+    company: "The Learners' Studio at Villanova University",
+    date: "January 2025 - Present",
+    description: [
+      "Provide 1-on-1 tutoring sessions to 40+ undergraduate computer science students per semester, covering 5+ distinct computer science courses",
+      "Conduct 4+ hours of tutoring sessions weekly, helping students refine their understanding of data structures and algorithms in programming languages such as Python and Java",
+    ],
+    type: "Work",
+    institutionLogo: null,
+  },
+  {
     role: "Bachelor of Science in Computer Science, Minor in Cybersecurity",
     company: "Villanova University",
     date: "August 2022 - May 2026 (Expected)",

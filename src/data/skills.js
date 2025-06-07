@@ -1,5 +1,5 @@
 import { FaPython, FaJava, FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaSwift, FaGitAlt, FaGithub, FaFigma, FaCode } from 'react-icons/fa';
-import { SiJavascript, SiTailwindcss, SiPostman, SiAmazondynamodb } from 'react-icons/si';
+import { SiJavascript, SiTailwindcss, SiPostman, SiAmazondynamodb, SiVercel } from 'react-icons/si';
 import { DiAws } from 'react-icons/di';
 
 
@@ -20,6 +20,7 @@ export const skillsData = [
       { name: "HTML5", icon: <FaHtml5 size="32" color="#E34F26" /> },
       { name: "CSS3", icon: <FaCss3Alt size="32" color="#1572B6" /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss size="32" color="#06B6D4" /> },
+      { name: "Figma", icon: <FaFigma size="32" color="purple" /> },
     ],
   },
   {
@@ -35,9 +36,9 @@ export const skillsData = [
     skills: [
       { name: "AWS", icon: <DiAws size="32" color="#FF9900" /> },
       { name: "Postman", icon: <SiPostman size="32" color="#FF6C37" /> },
+      { name: "Vercel", icon: <SiVercel size="32" color="#000000" /> },
       { name: "Git", icon: <FaGitAlt size="32" color="#F05032" /> },
       { name: "GitHub", icon: <FaGithub size="32" color="black"/> }, 
-      { name: "Figma", icon: <FaFigma size="32" color="purple" /> },
     ],
   },
 ];
