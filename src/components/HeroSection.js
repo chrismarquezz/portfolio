@@ -52,8 +52,8 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.9, ease: "easeOut" }}
         >
           <a
-            href="/Resume-Chris-Marquez.pdf"
-            download="Resume-Chris-Marquez.pdf"
+            href="/Chris-Marquez-Resume.pdf"
+            download="Chris-Marquez-Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 px-8 py-3 text-lg font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 transition-all duration-300 ease-in-out shadow-lg hover:shadow-xl motion-safe:hover:scale-105"
