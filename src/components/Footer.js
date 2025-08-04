@@ -47,10 +47,6 @@ export default function Footer() {
           </a>
         ))}
       </div>
-      <p>
-        Made by Chris Marquez
-      </p>
-      <p className="mt-1">&copy; {currentYear} Chris Marquez. All rights reserved.</p>
     </motion.footer>
   );
 }
