@@ -5,11 +5,11 @@ export const experienceData = [
   {
     role: "Software Engineering Intern",
     company: "ClassLink",
-    date: "June 2025 - Present",
+    date: "June 2025 - August 2025",
     description: [
-      "Architect a system to ingest and process roster data for millions of student and teacher accounts using RESTful APIs, and implementing a secure SSO login flow with OAuth2/OIDC",    
-      "Build a responsive and intuitive user interface from the ground up with React and Tailwind CSS, all supported by a scalable AWS-based backend",
-      "Create comprehensive API reference documentation and setup guides to streamline future partner integrations and ensure the project's long-term success",
+      "Produced a lightweight application integrating with ClassLink's ecosystem, including ingesting and processing roster data for millions of student and teacher accounts using ClassLink's APIs and 2+ services from AWS",    
+      "Implemented SSO authentication with OAuth2/OIDC for secure user login, allowing users to log in with their ClassLink credentials",
+      "Composed 5+ pages of API reference documentation, step-by-step setup guides, code samples, and security best practices to speed up future partner integrations",
     ],
     type: "Work",
     institutionLogo: ClassLinkLogo, 
