@@ -1,4 +1,5 @@
 import stardewdleImage from '../images/stardewdle.jpeg';
+import classlinkImage from '../images/classlink-integration-demonstrator.png';
 import comingSoonImage from '../images/coming-soon.png';
 
 export const projectsData = [
@@ -12,13 +13,13 @@ export const projectsData = [
     technologies: ["React", "JavaScript", "Tailwind CSS", "AWS"]
   },
   {
-    id: "coming-soon",
-    title: "Coming Soon",
-    description: "A placeholder project for future development.",
+    id: "classlink-integration-demonstrator",
+    title: "ClassLink Integration Demonstrator",
+    description: "A project to demonstrate a complete ClassLink integration, with a backend to sync roster data and user authentication via Single Sign-On (SSO)",
     liveUrl: "",
-    repoUrl: "",
-    image: comingSoonImage,
-    technologies: []
+    repoUrl: "https://github.com/chrismarquezz/ClassLink-Internship-Project",
+    image: classlinkImage,
+    technologies: ["Vite", "DynamoDB", "Lambda", "API Gateway","OAuth2/OIDC"]
   },
   {
     id: "coming-soon",
