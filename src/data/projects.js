@@ -14,20 +14,10 @@ export const projectsData = [
   },
   {
     id: "classlink-integration-demonstrator",
-    title: "ClassLink Integration Demonstrator",
+    title: "Integration Demonstrator",
     description: "A project to demonstrate a complete ClassLink integration, with a backend to sync roster data and user authentication via Single Sign-On (SSO)",
-    liveUrl: "",
     repoUrl: "https://github.com/chrismarquezz/ClassLink-Internship-Project",
     image: classlinkImage,
     technologies: ["Vite", "DynamoDB", "Lambda", "API Gateway","OAuth2/OIDC"]
-  },
-  {
-    id: "coming-soon",
-    title: "Coming Soon",
-    description: "A placeholder project for future development.",
-    liveUrl: "",
-    repoUrl: "",
-    image: comingSoonImage,
-    technologies: []
   }
 ];
