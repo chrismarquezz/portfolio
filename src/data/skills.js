@@ -1,5 +1,5 @@
-import { ViteLogo, AWSLogo, FigmaLogo, DynamoDBLogo, JavaLogo, HTMLLogo, PythonLogo, ReactLogo, GitLogo, CSSLogo, JSLogo, VercelLogo, GitHubLogo, SwiftLogo, NodeJSLogo, PostmanLogo, TailwindLogo, BeautifulSoupLogo } from '../data/icons';
-
+import { ViteLogo, AWSLogo, FigmaLogo, DynamoDBLogo, JavaLogo, HTMLLogo, PythonLogo, ReactLogo, GitLogo, CSSLogo, JSLogo, VercelLogo, SwiftLogo, NodeJSLogo, PostmanLogo, TailwindLogo, BeautifulSoupLogo } from '../data/icons';
+import GitHubIcon from '../components/GitHubIcon';
 
 export const skillsData = [
   {
@@ -37,7 +37,7 @@ export const skillsData = [
       { name: "Postman", icon: <PostmanLogo className="w-8 h-8" /> },
       { name: "Vercel", icon: <VercelLogo className="w-8 h-8" /> },
       { name: "Git", icon: <GitLogo className="w-8 h-8" /> },
-      { name: "GitHub", icon: <GitHubLogo className="w-8 h-8" /> },
+      { name: "GitHub", icon: <GitHubIcon className="w-8 h-8" /> },
     ],
   },
 ];

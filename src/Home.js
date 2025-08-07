@@ -35,7 +35,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <AboutMeSection />
-        <SkillsSection />
+        <SkillsSection darkMode={darkMode} />
         <ExperienceSection />
         <ProjectsSection />
         <ContactSection />
