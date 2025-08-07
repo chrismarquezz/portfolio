@@ -49,7 +49,7 @@ export default function ExperienceSection() {
                     <img src={item.institutionLogo} alt={`${item.company} logo`} className="w-7 h-7 object-contain" />
                   ) : (
                     item.type === 'Work' 
-                      ? <FaBriefcase className="w-5 h-5 text-blue-800 dark:text-blue-300" /> 
+                      ? <FaBriefcase className="w-5 h-5 text-blue-800 dark:text-blue-800" /> 
                       : <FaGraduationCap className="w-5 h-5 text-blue-800 dark:text-blue-300" />
                   )}
                 </div>
