@@ -10,12 +10,14 @@ import { ReactComponent as GitLogo } from './git-logo.svg';
 import { ReactComponent as CSSLogo } from './css-logo.svg';
 import { ReactComponent as JSLogo } from './js-logo.svg';
 import { ReactComponent as VercelLogo } from './vercel-logo.svg';
-import { ReactComponent as GitHubLogo } from './github-logo.svg';
 import { ReactComponent as SwiftLogo } from './swift-logo.svg';
 import { ReactComponent as NodeJSLogo } from './nodejs-logo.svg';
 import { ReactComponent as PostmanLogo } from './postman-logo.svg'
 import { ReactComponent as TailwindLogo } from './tailwind-logo.svg'
 import { ReactComponent as BeautifulSoupLogo } from './beautifulsoup-logo.svg';
+import { ReactComponent as GitHubLogoLight } from './github-logo-light.svg';
+import { ReactComponent as GitHubLogoDark } from './github-logo-dark.svg';
+
 
 
 export {
@@ -31,10 +33,11 @@ export {
   CSSLogo,
   JSLogo,
   VercelLogo,
-  GitHubLogo,
   SwiftLogo,
   NodeJSLogo,
   PostmanLogo,
   TailwindLogo,
-  BeautifulSoupLogo
+  BeautifulSoupLogo,
+  GitHubLogoLight,
+  GitHubLogoDark
 };
