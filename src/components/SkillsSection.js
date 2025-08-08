@@ -2,8 +2,15 @@ import { motion } from 'framer-motion';
 import { skillsData } from '../data/skills';
 import { certificationsData } from '../data/certifications';
 import { FaArrowRight } from 'react-icons/fa';
-import GitHubIcon from '../components/GitHubIcon';
+import GitHubIcon from './GitHubIcon';
+import VercelIcon from './VercelIcon';
+import BeautifulSoupIcon from './BeautifulSoupIcon';
 
+const specialIcons = {
+  GitHub: GitHubIcon,
+  Vercel: VercelIcon,
+  BeautifulSoup: BeautifulSoupIcon
+};
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -45,7 +52,6 @@ export default function SkillsSection({ darkMode }) {
           {skillsData.map((category) => (
             <motion.div
               key={category.category}
-              // 1. THIS IS THE HOVER EFFECT YOU LIKED
               className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 transition-shadow duration-300 ease-in-out hover:shadow-lg"
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
@@ -55,17 +61,19 @@ export default function SkillsSection({ darkMode }) {
                 {category.category}
               </h3>
               <ul className="space-y-4">
-                {category.skills.map((skill) => (
-                  <li key={skill.name} className="flex items-center gap-4">
-                    <span className="flex-shrink-0">
-                      {/* 2. THIS IS THE DARK MODE LOGIC FOR GITHUB */}
-                      {skill.name === 'GitHub' ? <GitHubIcon darkMode={darkMode} /> : skill.icon}
-                    </span>
-                    <span className="text-gray-700 dark:text-gray-300">
-                      {skill.name}
-                    </span>
-                  </li>
-                ))}
+                {category.skills.map((skill) => {
+                  const SpecialIcon = specialIcons[skill.name];
+                  return (
+                    <li key={skill.name} className="flex items-center gap-4">
+                      <span className="flex-shrink-0">
+                        {SpecialIcon ? <SpecialIcon darkMode={darkMode} /> : skill.icon}
+                      </span>
+                      <span className="text-gray-700 dark:text-gray-300">
+                        {skill.name}
+                      </span>
+                    </li>
+                  );
+                })}
               </ul>
             </motion.div>
           ))}
@@ -88,7 +96,6 @@ export default function SkillsSection({ darkMode }) {
             {certificationsData.map((cert, index) => (
               <motion.div
                 key={index}
-                // 3. THE CERTIFICATION CARD NOW HAS THE IDENTICAL HOVER EFFECT
                 className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 text-left flex flex-col w-full max-w-md transition-shadow duration-300 ease-in-out hover:shadow-lg"
                 variants={itemVariants}
                 whileHover={{ scale: 1.05 }}

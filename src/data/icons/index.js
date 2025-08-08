@@ -9,16 +9,17 @@ import { ReactComponent as ReactLogo } from './react-logo.svg';
 import { ReactComponent as GitLogo } from './git-logo.svg';
 import { ReactComponent as CSSLogo } from './css-logo.svg';
 import { ReactComponent as JSLogo } from './js-logo.svg';
-import { ReactComponent as VercelLogo } from './vercel-logo.svg';
 import { ReactComponent as SwiftLogo } from './swift-logo.svg';
 import { ReactComponent as NodeJSLogo } from './nodejs-logo.svg';
-import { ReactComponent as PostmanLogo } from './postman-logo.svg'
-import { ReactComponent as TailwindLogo } from './tailwind-logo.svg'
-import { ReactComponent as BeautifulSoupLogo } from './beautifulsoup-logo.svg';
+import { ReactComponent as PostmanLogo } from './postman-logo.svg';
+import { ReactComponent as TailwindLogo } from './tailwind-logo.svg';
+
 import { ReactComponent as GitHubLogoLight } from './github-logo-light.svg';
 import { ReactComponent as GitHubLogoDark } from './github-logo-dark.svg';
-
-
+import { ReactComponent as VercelLogoLight } from './vercel-logo-light.svg';
+import { ReactComponent as VercelLogoDark } from './vercel-logo-dark.svg';
+import { ReactComponent as BeautifulSoupLogoLight } from './beautifulsoup-logo-light.svg';
+import { ReactComponent as BeautifulSoupLogoDark } from './beautifulsoup-logo-dark.svg';
 
 export {
   ViteLogo,
@@ -32,12 +33,14 @@ export {
   GitLogo,
   CSSLogo,
   JSLogo,
-  VercelLogo,
   SwiftLogo,
   NodeJSLogo,
   PostmanLogo,
   TailwindLogo,
-  BeautifulSoupLogo,
   GitHubLogoLight,
-  GitHubLogoDark
+  GitHubLogoDark,
+  VercelLogoLight,
+  VercelLogoDark,
+  BeautifulSoupLogoLight,
+  BeautifulSoupLogoDark
 };
