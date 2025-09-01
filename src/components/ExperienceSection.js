@@ -70,7 +70,7 @@ export default function ExperienceSection() {
                 </time>
                 <ul className="list-disc list-inside space-y-1 text-base text-gray-600 dark:text-gray-300">
                   {item.description.map((point, i) => (
-                    <li key={i}>{point}</li>
+                    <p key={i}>{point}</p>
                   ))}
                 </ul>
               </div>
