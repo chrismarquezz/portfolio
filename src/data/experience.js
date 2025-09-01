@@ -7,9 +7,7 @@ export const experienceData = [
     company: "ClassLink",
     date: "June 2025 - August 2025",
     description: [
-      "Produced a lightweight application integrating with ClassLink's ecosystem, including ingesting and processing roster data for millions of student and teacher accounts using ClassLink's APIs and 2+ services from AWS",    
-      "Implemented SSO authentication with OAuth2/OIDC for secure user login, allowing users to log in with their ClassLink credentials",
-      "Composed 5+ pages of API reference documentation, step-by-step setup guides, code samples, and security best practices to speed up future partner integrations",
+      "Built a lightweight application that ingested and processed roster data for millions of student and teacher accounts, demonstrating a scalable integration model for future partners. Implemented SSO authentication with OAuth2/OIDC and authored API reference documentation to improve future integrations.",    
     ],
     type: "Work",
     institutionLogo: ClassLinkLogo, 
@@ -19,8 +17,7 @@ export const experienceData = [
     company: "The Learners' Studio at Villanova University",
     date: "January 2025 - Present",
     description: [
-      "Provide 1-on-1 tutoring sessions to 40+ undergraduate computer science students per semester, covering 5+ distinct computer science courses",
-      "Conduct 4+ hours of tutoring sessions weekly, helping students refine their understanding of data structures and algorithms in programming languages such as Python and Java",
+      "Provide 1-on-1 tutoring to 100+ undergraduate students per semester across 5+ computer science courses, focusing on data structures, algorithms, and programming in Python and Java. Help students strengthen problem-solving skills and improve coding proficiency, leading to better performance on coursework and exams.",
     ],
     type: "Work",
     institutionLogo: null,
