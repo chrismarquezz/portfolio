@@ -1,7 +1,23 @@
-import { ViteLogo, AWSLogo, FigmaLogo, DynamoDBLogo, JavaLogo, HTMLLogo, PythonLogo, ReactLogo, GitLogo, CSSLogo, JSLogo, SwiftLogo, NodeJSLogo, PostmanLogo, TailwindLogo } from '../data/icons';
-import GitHubIcon from '../components/GitHubIcon';
-import VercelIcon from '../components/VercelIcon';
-import BeautifulSoupIcon from '../components/BeautifulSoupIcon';
+import {
+  ViteLogo,
+  AWSLogo,
+  FigmaLogo,
+  DynamoDBLogo,
+  JavaLogo,
+  HTMLLogo,
+  PythonLogo,
+  ReactLogo,
+  GitLogo,
+  CSSLogo,
+  JSLogo,
+  SwiftLogo,
+  NodeJSLogo,
+  PostmanLogo,
+  TailwindLogo,
+} from "../data/icons";
+import GitHubIcon from "../components/GitHubIcon";
+import VercelIcon from "../components/VercelIcon";
+import BeautifulSoupIcon from "../components/BeautifulSoupIcon";
 
 export const skillsData = [
   {
@@ -29,7 +45,10 @@ export const skillsData = [
     skills: [
       { name: "Node.js", icon: <NodeJSLogo className="w-8 h-8" /> },
       { name: "DynamoDB", icon: <DynamoDBLogo className="w-8 h-8" /> },
-      { name: "BeautifulSoup", icon: <BeautifulSoupIcon className="w-8 h-8" /> },
+      {
+        name: "BeautifulSoup",
+        icon: <BeautifulSoupIcon className="w-8 h-8" />,
+      },
     ],
   },
   {

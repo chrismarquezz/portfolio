@@ -15,7 +15,10 @@ const containerVariants = {
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="py-20 md:py-28 px-4 bg-white dark:bg-slate-900">
+    <section
+      id="projects"
+      className="py-20 md:py-28 px-4 bg-gray-50 dark:bg-slate-800"
+    >
       <motion.h2
         className="text-3xl sm:text-4xl font-bold text-center mb-12 md:mb-16 text-gray-900 dark:text-white"
         initial={{ opacity: 0, y: -20 }}
@@ -40,7 +43,9 @@ export default function ProjectsSection() {
           ))}
         </motion.div>
       ) : (
-        <p className="text-center text-gray-600 dark:text-gray-400">No projects to display at the moment. Check back soon!</p>
+        <p className="text-center text-gray-600 dark:text-gray-400">
+          No projects to display at the moment. Check back soon!
+        </p>
       )}
     </section>
   );

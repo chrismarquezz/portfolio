@@ -1,50 +1,50 @@
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { HiMenuAlt3, HiX } from 'react-icons/hi';
-import DarkModeToggle from './DarkModeToggle';
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { HiMenuAlt3, HiX } from "react-icons/hi";
+import DarkModeToggle from "./DarkModeToggle";
 
 const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Contact', href: '#contact' },
+  { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Skills", href: "#skills" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar({ darkMode, setDarkMode }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
-      let currentSection = '';
+      let currentSection = "";
       for (const link of navLinks) {
         const section = document.getElementById(link.href.substring(1));
         if (section && window.scrollY >= section.offsetTop - 100) {
           currentSection = section.id;
         }
       }
-      const atBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 2;
+      const atBottom =
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 2;
       if (atBottom) {
-        currentSection = 'contact';
+        currentSection = "contact";
       }
       setActiveSection(currentSection);
     };
     handleScroll();
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.5, ease: 'easeOut' }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
       className="fixed top-0 left-0 right-0 z-50 bg-gray-50/90 dark:bg-slate-800/90 shadow-md backdrop-blur-sm"
     >
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          
           <div className="hidden md:block">
             <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
           </div>
@@ -58,8 +58,8 @@ export default function Navbar({ darkMode, setDarkMode }) {
                   whileHover={{ scale: 1.1 }}
                   className={`relative text-lg font-medium transition-colors duration-300 ${
                     activeSection === link.href.substring(1)
-                      ? 'text-blue-600 dark:text-blue-400'
-                      : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+                      ? "text-blue-600 dark:text-blue-400"
+                      : "text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                   }`}
                 >
                   {link.label}
@@ -74,7 +74,11 @@ export default function Navbar({ darkMode, setDarkMode }) {
             </div>
 
             <div className="md:hidden">
-              <button onClick={() => setIsOpen(!isOpen)} className="text-gray-800 dark:text-gray-200" aria-label="Open menu">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-gray-800 dark:text-gray-200"
+                aria-label="Open menu"
+              >
                 {isOpen ? <HiX size="28" /> : <HiMenuAlt3 size="28" />}
               </button>
             </div>
@@ -86,7 +90,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-slate-900 shadow-lg"
           >
@@ -98,8 +102,8 @@ export default function Navbar({ darkMode, setDarkMode }) {
                   onClick={() => setIsOpen(false)}
                   className={`text-xl font-medium transition-colors duration-300 ${
                     activeSection === link.href.substring(1)
-                      ? 'text-blue-600 dark:text-blue-400'
-                      : 'text-gray-700 dark:text-gray-300'
+                      ? "text-blue-600 dark:text-blue-400"
+                      : "text-gray-700 dark:text-gray-300"
                   }`}
                 >
                   {link.label}
