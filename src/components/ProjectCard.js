@@ -35,7 +35,9 @@ export default function ProjectCard({ project }) {
 
         {project.technologies && project.technologies.length > 0 && (
           <div className="mb-4">
-             <h4 className="text-xs font-bold uppercase text-gray-500 dark:text-gray-400 mb-2 text-center">Technologies</h4>
+            <h4 className="text-xs font-bold uppercase text-gray-500 dark:text-gray-400 mb-2 text-center">
+              Technologies
+            </h4>
             <div className="flex flex-wrap justify-center gap-2">
               {project.technologies.map((tech) => (
                 <span
@@ -61,7 +63,7 @@ export default function ProjectCard({ project }) {
               View Live
             </a>
           )}
-          
+
           <a
             href={project.repoUrl}
             target="_blank"

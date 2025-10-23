@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(() => {
-    if (typeof window === 'undefined') {
+    if (typeof window === "undefined") {
       return false;
     }
     const savedMode = localStorage.getItem("darkMode");
@@ -35,9 +35,9 @@ export default function Home() {
       <main>
         <HeroSection />
         <AboutMeSection />
-        <SkillsSection darkMode={darkMode} />
         <ExperienceSection />
         <ProjectsSection />
+        <SkillsSection darkMode={darkMode} />
         <ContactSection />
       </main>
       <Footer />

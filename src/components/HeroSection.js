@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
 import profileImage from "../images/profile.jpeg";
-import { FaDownload, FaLinkedin, FaGithub, FaChevronDown } from "react-icons/fa";
+import {
+  FaDownload,
+  FaLinkedin,
+  FaGithub,
+  FaChevronDown,
+} from "react-icons/fa";
 
 export default function HeroSection() {
-
   return (
     <section className="relative flex flex-col md:flex-row items-center justify-center text-center md:text-left min-h-screen py-24 px-6 gap-10 md:gap-16">
       <motion.div
@@ -26,7 +30,7 @@ export default function HeroSection() {
         >
           Chris Marquez
         </motion.h1>
-        
+
         <motion.p
           className="mt-2 text-xl md:text-2xl font-medium text-blue-600 dark:text-blue-400"
           initial={{ opacity: 0, y: -30 }}
@@ -35,16 +39,18 @@ export default function HeroSection() {
         >
           Aspiring Full-Stack Software Engineer
         </motion.p>
-        
+
         <motion.p
           className="mt-6 text-lg md:text-xl text-gray-700 dark:text-gray-300"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.7, ease: "easeOut" }}
         >
-          A driven computer science student at Villanova University, seeking full-time opportunities for May 2026. I'm currently applying my skills to build a real-world application as a Software Engineering Intern at ClassLink.
+          Computer Science student at Villanova University (’26). Former
+          Software Engineering Intern at ClassLink. Passionate about building
+          scalable, cloud-based applications and elegant user experiences.
         </motion.p>
-        
+
         <motion.div
           className="mt-10 flex flex-wrap items-center justify-center md:justify-start gap-6"
           initial={{ opacity: 0, y: 20 }}
@@ -61,16 +67,28 @@ export default function HeroSection() {
             <FaDownload className="transition-transform duration-200 ease-in-out group-hover:translate-y-0.5" />
             My Resume
           </a>
-          
-          <a href="https://github.com/chrismarquezz" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="text-gray-500 hover:text-black dark:hover:text-white transition-all duration-300 motion-safe:hover:scale-110">
+
+          <a
+            href="https://github.com/chrismarquezz"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+            className="text-gray-500 hover:text-black dark:hover:text-white transition-all duration-300 motion-safe:hover:scale-110"
+          >
             <FaGithub size="32" />
           </a>
-          <a href="https://www.linkedin.com/in/chris--marquez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 motion-safe:hover:scale-110">
+          <a
+            href="https://www.linkedin.com/in/chris--marquez/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+            className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 motion-safe:hover:scale-110"
+          >
             <FaLinkedin size="32" />
           </a>
         </motion.div>
       </div>
-      
+
       <motion.div
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
         initial={{ opacity: 0 }}
@@ -81,7 +99,10 @@ export default function HeroSection() {
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
         >
-          <FaChevronDown className="text-gray-400 dark:text-gray-500" size="24" />
+          <FaChevronDown
+            className="text-gray-400 dark:text-gray-500"
+            size="24"
+          />
         </motion.div>
       </motion.div>
     </section>

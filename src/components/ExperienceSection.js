@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { experienceData } from '../data/experience';
-import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
+import { motion } from "framer-motion";
+import { experienceData } from "../data/experience";
+import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -17,14 +17,14 @@ const itemVariants = {
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-20 md:py-28 px-4 bg-gray-50 dark:bg-slate-800">
+    <section id="experience" className="py-20 md:py-28 px-4 dark:bg-slate-900">
       <div className="max-w-4xl mx-auto">
         <motion.h2
           className="text-3xl sm:text-4xl font-bold text-center mb-12 md:mb-16 text-gray-900 dark:text-white"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
         >
           Experience & Education
         </motion.h2>
@@ -41,16 +41,20 @@ export default function ExperienceSection() {
               key={index}
               className="flex gap-4 md:gap-8"
               variants={itemVariants}
-              transition={{ duration: 0.8, ease: 'easeOut' }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
             >
               <div className="relative flex flex-col items-center flex-shrink-0 w-12">
                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-white flex items-center justify-center ring-4 ring-white dark:ring-slate-800 z-10">
                   {item.institutionLogo ? (
-                    <img src={item.institutionLogo} alt={`${item.company} logo`} className="w-7 h-7 object-contain" />
+                    <img
+                      src={item.institutionLogo}
+                      alt={`${item.company} logo`}
+                      className="w-7 h-7 object-contain"
+                    />
+                  ) : item.type === "Work" ? (
+                    <FaBriefcase className="w-5 h-5 text-blue-800 dark:text-blue-800" />
                   ) : (
-                    item.type === 'Work' 
-                      ? <FaBriefcase className="w-5 h-5 text-blue-800 dark:text-blue-800" /> 
-                      : <FaGraduationCap className="w-5 h-5 text-blue-800 dark:text-blue-300" />
+                    <FaGraduationCap className="w-5 h-5 text-blue-800 dark:text-blue-300" />
                   )}
                 </div>
                 {index < experienceData.length - 1 && (
@@ -58,7 +62,11 @@ export default function ExperienceSection() {
                 )}
               </div>
 
-              <div className={index === experienceData.length - 1 ? 'pt-1' : 'pt-1 pb-12'}>
+              <div
+                className={
+                  index === experienceData.length - 1 ? "pt-1" : "pt-1 pb-12"
+                }
+              >
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                   {item.role}
                 </h3>
