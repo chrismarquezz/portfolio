@@ -8,6 +8,7 @@ import BeautifulSoupIcon from './BeautifulSoupIcon';
 
 const specialIcons = {
   GitHub: GitHubIcon,
+  "Git/GitHub": GitHubIcon,
   Vercel: VercelIcon,
   BeautifulSoup: BeautifulSoupIcon
 };
@@ -43,7 +44,7 @@ export default function SkillsSection({ darkMode }) {
         </motion.h2>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
