@@ -46,7 +46,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.7, ease: "easeOut" }}
         >
-          Computer Science student at Villanova University (’26). Former
+          Computer Science student at Villanova University ('26). Former
           Software Engineering Intern at ClassLink. Passionate about building
           scalable, cloud-based applications and elegant user experiences.
         </motion.p>

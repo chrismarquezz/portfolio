@@ -49,14 +49,14 @@ export default function AboutMeSection() {
               millions of users.
             </p>
             <p>
-              In my own time, I’ve built personal projects like Stardewdle, a
+              In my own time, I've built personal projects like Stardewdle, a
               full-stack Wordle-style game played tens of thousands of times,
               and VoiceChess, an iOS app that lets users play chess entirely
               through voice commands. These projects reflect my passion for
               combining creativity, accessibility, and technical precision.
             </p>
             <p>
-              Outside of coding, I’m passionate about fitness and chess, two
+              Outside of coding, I'm passionate about fitness and chess, two
               pursuits that constantly challenge me to think strategically and
               push for continuous improvement.
             </p>

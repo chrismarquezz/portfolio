@@ -26,7 +26,7 @@ export default function ContactSection() {
             <FaEnvelope />
             Email
           </a>
-          
+
           <a
             href="https://github.com/chrismarquezz"
             target="_blank"
