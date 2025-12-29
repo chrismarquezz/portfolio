@@ -30,8 +30,6 @@ export default function ProjectsSection() {
       </motion.h2>
       {projectsData.length > 0 ? (
         <motion.div
-          // === THE CHANGE IS ON THIS LINE ===
-          // Switched from 'grid' to 'flex' for better centering
           className="flex flex-wrap justify-center gap-8 md:gap-10 max-w-7xl mx-auto px-4"
           variants={containerVariants}
           initial="hidden"
@@ -43,8 +41,8 @@ export default function ProjectsSection() {
           ))}
         </motion.div>
       ) : (
-        <p className="text-center text-gray-600 dark:text-gray-400">
-          No projects to display at the moment. Check back soon!
+        <p className="text-center text-gray-700 dark:text-gray-300">
+          No projects to display at the moment. Please check back later!
         </p>
       )}
     </section>

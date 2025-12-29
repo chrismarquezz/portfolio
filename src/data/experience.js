@@ -15,34 +15,23 @@ export const experienceData = [
     institutionLogo: ClassLinkLogo,
   },
   {
-    role: "Computer Science Peer Tutor",
-    company: "The Learners' Studio at Villanova University",
-    date: "January 2025 – Present",
+    role: "Co-Founder, Co-President",
+    company: "Villanova Software Engineers",
+    date: "October 2024 – Present",
     description: [
-      "- Tutored 100+ students across 200+ sessions in data structures, algorithms, and programming (Python/Java), improving problem-solving skills and academic performance",
-      "- Nominated for Peer Tutor of the Year from pool of 100+ tutors, recognized for teaching excellence and mentorship impact across multiple CS disciplines",
+      "- Co-founded 20+ member engineering organization delivering full-stack applications for startup clients, managing cross-functional teams and establishing development workflows",
+      "- Leading development of React/Node.js/PostgreSQL web application supporting 1000+ users, coordinating Agile sprints and guiding architecture decisions toward production release",
+      "- Mentored 10+ junior developers through code reviews and pair programming, introducing Git workflow, debugging practices, and frontend patterns to accelerate team onboarding",
     ],
     type: "Work",
     institutionLogo: null,
   },
-  {
-    role: "Competitive Programmer",
-    company: "Villanova Programming Team",
-    date: "August 2022 – Present",
-    description: [
-      "- Selected by faculty to represent Villanova at 2025 ICPC regional (90+ teams), solving algorithmic problems in Python using data structures and optimization techniques",
-      "- Solved 300+ LeetCode/Kattis challenges through consistent practice, strengthening expertise in algorithms, complexity analysis, and competitive programming techniques",
-    ],
-    type: "Work",
-    institutionLogo: null,
-  },
-
   {
     role: "Bachelor of Science in Computer Science, Minor in Cybersecurity",
     company: "Villanova University",
     date: "August 2022 – May 2026 (Expected)",
     description: [
-      "- Pursuing a B.S. in Computer Science with a Cybersecurity minor, maintaining a 3.75 GPA and Dean’s List honors for six consecutive semesters.",
+      "- Pursuing a B.S. in Computer Science with a Cybersecurity minor, maintaining a 3.75 GPA and Dean’s List honors for six consecutive semesters",
     ],
     type: "Education",
     institutionLogo: VillanovaLogo,
