@@ -1,8 +1,6 @@
 import { ReactComponent as ViteLogo } from "./vite-logo.svg";
 import { ReactComponent as AWSLogo } from "./aws-logo.svg";
-import { ReactComponent as FigmaLogo } from "./figma-logo.svg";
 import { ReactComponent as DynamoDBLogo } from "./dynamodb-logo.svg";
-import { ReactComponent as JavaLogo } from "./java-logo.svg";
 import { ReactComponent as HTMLLogo } from "./html-logo.svg";
 import { ReactComponent as PythonLogo } from "./python-logo.svg";
 import { ReactComponent as ReactLogo } from "./react-logo.svg";
@@ -17,7 +15,8 @@ import { ReactComponent as JiraLogo } from "./jira-logo.svg";
 import { ReactComponent as DatabaseLogo } from "./database-logo.svg";
 import { ReactComponent as CICDLogo } from "./cicd-logo.svg";
 import { ReactComponent as AgileLogo } from "./agile-logo.svg";
-
+import { ReactComponent as ExpressLogo } from "./express-logo.svg";
+import { ReactComponent as OAuthLogo } from "./oauth-logo.svg";
 import { ReactComponent as GitHubLogoLight } from "./github-logo-light.svg";
 import { ReactComponent as GitHubLogoDark } from "./github-logo-dark.svg";
 import { ReactComponent as VercelLogoLight } from "./vercel-logo-light.svg";
@@ -28,9 +27,7 @@ import { ReactComponent as BeautifulSoupLogoDark } from "./beautifulsoup-logo-da
 export {
   ViteLogo,
   AWSLogo,
-  FigmaLogo,
   DynamoDBLogo,
-  JavaLogo,
   HTMLLogo,
   PythonLogo,
   ReactLogo,
@@ -45,6 +42,8 @@ export {
   DatabaseLogo,
   CICDLogo,
   AgileLogo,
+  ExpressLogo,
+  OAuthLogo,
   GitHubLogoLight,
   GitHubLogoDark,
   VercelLogoLight,
