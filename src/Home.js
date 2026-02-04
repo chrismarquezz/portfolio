@@ -6,7 +6,6 @@ import SkillsSection from "./components/SkillsSection";
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactSection from "./components/ContactSection";
-import Footer from "./components/Footer";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -40,7 +39,6 @@ export default function Home() {
         <SkillsSection darkMode={darkMode} />
         <ContactSection />
       </main>
-      <Footer />
     </div>
   );
 }
