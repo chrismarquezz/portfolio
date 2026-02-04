@@ -18,7 +18,7 @@ export default function HeroSection() {
         <img
           src={profileImage}
           alt="A professional headshot of Chris Marquez"
-          className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover shadow-2xl border-4 border-white dark:border-gray-700"
+          className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover object-[center_30%] shadow-2xl border-4 border-white dark:border-gray-700"
         />
       </motion.div>
       <div className="max-w-2xl">

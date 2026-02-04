@@ -6,7 +6,7 @@ export const projectsData = [
     id: "stardewdle",
     title: "Stardewdle",
     description:
-      "A Wordle-style guessing game with over 100k+ plays based on crops from the popular game Stardew Valley.",
+      "A Wordle-style guessing game with over 140k+ plays based on crops from the popular game Stardew Valley.",
     liveUrl: "https://stardewdle.com",
     repoUrl: "https://github.com/chrismarquezz/Stardewdle",
     image: stardewdleImage,
