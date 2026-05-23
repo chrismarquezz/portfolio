@@ -5,6 +5,25 @@ import repopilotImage from "../images/repopilot.png";
 
 export const projectsData = [
   {
+    id: "stardewdle",
+    title: "Stardewdle",
+    description:
+      "A Wordle-style guessing game with over 300k+ plays based on crops from the popular game Stardew Valley.",
+    longDescription: "",
+    liveUrl: "https://stardewdle.com",
+    repoUrl: "https://github.com/chrismarquezz/Stardewdle",
+    image: stardewdleImage,
+    gif: null,
+    technologies: [
+      "React",
+      "JavaScript",
+      "AWS Lambda",
+      "DynamoDB",
+      "API Gateway",
+      "Tailwind CSS",
+    ],
+  },
+  {
     id: "repopilot",
     title: "RepoPilot",
     description:
@@ -24,25 +43,6 @@ export const projectsData = [
       "Claude API",
       "Docker",
       "Pytest",
-    ],
-  },
-  {
-    id: "stardewdle",
-    title: "Stardewdle",
-    description:
-      "A Wordle-style guessing game with over 300k+ plays based on crops from the popular game Stardew Valley.",
-    longDescription: "",
-    liveUrl: "https://stardewdle.com",
-    repoUrl: "https://github.com/chrismarquezz/Stardewdle",
-    image: stardewdleImage,
-    gif: null,
-    technologies: [
-      "React",
-      "JavaScript",
-      "AWS Lambda",
-      "DynamoDB",
-      "API Gateway",
-      "Tailwind CSS",
     ],
   },
   {
@@ -75,6 +75,13 @@ export const projectsData = [
     repoUrl: "https://github.com/chrismarquezz/CraftMate",
     image: craftmateImage,
     gif: null,
-    technologies: ["Python", "python-chess", "Stockfish", "mcrcon", "opensimplex", "Minecraft Java Edition"],
+    technologies: [
+      "Python",
+      "python-chess",
+      "Stockfish",
+      "mcrcon",
+      "opensimplex",
+      "Minecraft Java Edition",
+    ],
   },
 ];
