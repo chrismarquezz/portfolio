@@ -1,50 +1,54 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { projectsData } from "../data/projects";
-import ProjectCard from "./ProjectCard";
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.1,
-    },
-  },
-};
+import FeaturedProject from "./FeaturedProject";
+import ProjectModal from "./ProjectModal";
 
 export default function ProjectsSection() {
+  const [selectedProject, setSelectedProject] = useState(null);
+
   return (
     <section
       id="projects"
       className="py-20 md:py-28 px-4 bg-gray-50 dark:bg-slate-800"
     >
-      <motion.h2
-        className="text-3xl sm:text-4xl font-bold text-center mb-12 md:mb-16 text-gray-900 dark:text-white"
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
-        Projects
-      </motion.h2>
-      {projectsData.length > 0 ? (
-        <motion.div
-          className="flex flex-wrap justify-center gap-8 md:gap-10 max-w-7xl mx-auto px-4"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
+      <div className="max-w-4xl mx-auto">
+        <motion.h2
+          className="text-3xl sm:text-4xl font-bold text-center mb-16 md:mb-20 text-gray-900 dark:text-white"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          {projectsData.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </motion.div>
-      ) : (
-        <p className="text-center text-gray-700 dark:text-gray-300">
-          No projects to display at the moment. Please check back later!
-        </p>
-      )}
+          Projects
+        </motion.h2>
+
+        {projectsData.length > 0 ? (
+          <div className="flex flex-col gap-24 md:gap-32">
+            {projectsData.map((project, index) => (
+              <FeaturedProject
+                key={project.id}
+                project={project}
+                index={index}
+                onClick={() => setSelectedProject(project)}
+              />
+            ))}
+          </div>
+        ) : (
+          <p className="text-center text-gray-700 dark:text-gray-300">
+            No projects to display at the moment. Please check back later!
+          </p>
+        )}
+      </div>
+
+      <AnimatePresence>
+        {selectedProject && (
+          <ProjectModal
+            project={selectedProject}
+            onClose={() => setSelectedProject(null)}
+          />
+        )}
+      </AnimatePresence>
     </section>
   );
 }

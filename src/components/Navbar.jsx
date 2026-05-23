@@ -1,40 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import DarkModeToggle from "./DarkModeToggle";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
 ];
 
 export default function Navbar({ darkMode, setDarkMode }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      let currentSection = "";
-      for (const link of navLinks) {
-        const section = document.getElementById(link.href.substring(1));
-        if (section && window.scrollY >= section.offsetTop - 100) {
-          currentSection = section.id;
-        }
-      }
-      const atBottom =
-        window.innerHeight + window.scrollY >= document.body.offsetHeight - 2;
-      if (atBottom) {
-        currentSection = "contact";
-      }
-      setActiveSection(currentSection);
-    };
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <motion.nav
@@ -45,43 +20,35 @@ export default function Navbar({ darkMode, setDarkMode }) {
     >
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="hidden md:block">
+          <a
+            href="#"
+            className="text-lg font-semibold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+          >
+            Chris Marquez
+          </a>
+
+          <div className="hidden md:flex items-center gap-6">
+            {navLinks.map((link) => (
+              <motion.a
+                key={link.label}
+                href={link.href}
+                whileHover={{ scale: 1.05 }}
+                className="text-base font-medium text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+              >
+                {link.label}
+              </motion.a>
+            ))}
             <DarkModeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
           </div>
 
-          <div className="flex items-center gap-6">
-            <div className="hidden md:flex items-center space-x-8">
-              {navLinks.map((link) => (
-                <motion.a
-                  key={link.label}
-                  href={link.href}
-                  whileHover={{ scale: 1.1 }}
-                  className={`relative text-lg font-medium transition-colors duration-300 ${
-                    activeSection === link.href.substring(1)
-                      ? "text-blue-600 dark:text-blue-400"
-                      : "text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-                  }`}
-                >
-                  {link.label}
-                  {activeSection === link.href.substring(1) && (
-                    <motion.div
-                      className="absolute bottom-[-4px] left-0 right-0 h-[2px] bg-blue-600 dark:bg-blue-400"
-                      layoutId="underline"
-                    />
-                  )}
-                </motion.a>
-              ))}
-            </div>
-
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="text-gray-800 dark:text-gray-200"
-                aria-label="Open menu"
-              >
-                {isOpen ? <HiX size="28" /> : <HiMenuAlt3 size="28" />}
-              </button>
-            </div>
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-800 dark:text-gray-200"
+              aria-label="Open menu"
+            >
+              {isOpen ? <HiX size="28" /> : <HiMenuAlt3 size="28" />}
+            </button>
           </div>
         </div>
       </div>
@@ -100,11 +67,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
                   key={link.label}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`text-xl font-medium transition-colors duration-300 ${
-                    activeSection === link.href.substring(1)
-                      ? "text-blue-600 dark:text-blue-400"
-                      : "text-gray-700 dark:text-gray-300"
-                  }`}
+                  className="text-xl font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
                 >
                   {link.label}
                 </a>

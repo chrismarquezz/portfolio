@@ -1,21 +1,14 @@
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
-import AboutMeSection from "./components/AboutMeSection";
-import SkillsSection from "./components/SkillsSection";
-import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
-import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(() => {
-    if (typeof window === "undefined") {
-      return false;
-    }
+    if (typeof window === "undefined") return false;
     const savedMode = localStorage.getItem("darkMode");
-    if (savedMode !== null) {
-      return JSON.parse(savedMode);
-    }
+    if (savedMode !== null) return JSON.parse(savedMode);
     return false;
   });
 
@@ -33,12 +26,9 @@ export default function Home() {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <main>
         <HeroSection />
-        <AboutMeSection />
-        <ExperienceSection />
-        <ProjectsSection />
-        <SkillsSection darkMode={darkMode} />
-        <ContactSection />
+<ProjectsSection />
       </main>
+      <Footer />
     </div>
   );
 }
