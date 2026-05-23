@@ -6,6 +6,7 @@ import {
   FaEnvelope,
   FaChevronDown,
 } from "react-icons/fa";
+import Tooltip from "./Tooltip";
 
 export default function HeroSection() {
   return (
@@ -34,45 +35,49 @@ export default function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
       >
-        <a
-          href="https://github.com/chrismarquezz"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="GitHub"
-          aria-label="GitHub"
-          className="text-gray-500 hover:text-black dark:hover:text-white transition-colors duration-200 motion-safe:hover:scale-110"
-        >
-          <FaGithub size="28" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/chris--marquez/"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="LinkedIn"
-          aria-label="LinkedIn"
-          className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 motion-safe:hover:scale-110"
-        >
-          <FaLinkedin size="28" />
-        </a>
-        <a
-          href="mailto:chrismarquez00@icloud.com"
-          title="Email"
-          aria-label="Email"
-          className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 motion-safe:hover:scale-110"
-        >
-          <FaEnvelope size="28" />
-        </a>
-        <a
-          href="/Chris-Marquez-Resume.pdf"
-          download="Chris-Marquez-Resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Resume"
-          aria-label="Resume"
-          className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 motion-safe:hover:scale-110"
-        >
-          <FaDownload size="26" />
-        </a>
+        <Tooltip label="GitHub">
+          <a
+            href="https://github.com/chrismarquezz"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="text-gray-500 hover:text-black dark:hover:text-white transition-colors duration-200 motion-safe:hover:scale-110"
+          >
+            <FaGithub size="28" />
+          </a>
+        </Tooltip>
+        <Tooltip label="LinkedIn">
+          <a
+            href="https://www.linkedin.com/in/chris--marquez/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 motion-safe:hover:scale-110"
+          >
+            <FaLinkedin size="28" />
+          </a>
+        </Tooltip>
+        <Tooltip label="Email">
+          <a
+            href="mailto:chrismarquez00@icloud.com"
+            aria-label="Email"
+            className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 motion-safe:hover:scale-110"
+          >
+            <FaEnvelope size="28" />
+          </a>
+        </Tooltip>
+        <Tooltip label="Resume">
+          <a
+            href="/Chris-Marquez-Resume.pdf"
+            download="Chris-Marquez-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Resume"
+            className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 motion-safe:hover:scale-110"
+          >
+            <FaDownload size="26" />
+          </a>
+        </Tooltip>
       </motion.div>
 
       <motion.div

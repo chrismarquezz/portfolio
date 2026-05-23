@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
+import Tooltip from "./Tooltip";
 
 export default function ProjectModal({ project, onClose }) {
   const displayImage = project.gif || project.image;
@@ -49,9 +50,12 @@ export default function ProjectModal({ project, onClose }) {
         <button
           onClick={onClose}
           aria-label="Close modal"
-          className="absolute top-4 right-4 z-20 p-2 rounded-full bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-600 transition-colors duration-200"
+          className="group absolute top-4 right-4 z-20 p-2 rounded-full bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-slate-600 transition-colors duration-200"
         >
           <FaTimes size={16} />
+          <span className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2 py-1 text-xs font-medium bg-gray-800 dark:bg-gray-700 text-white rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+            Close
+          </span>
         </button>
 
         {/* Image */}

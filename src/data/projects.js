@@ -29,7 +29,7 @@ export const projectsData = [
     description:
       "A RAG-powered codebase Q&A tool enabling natural language search across 19 supported file types using vector embeddings and streamed LLM responses via the Claude API.",
     longDescription: "",
-    liveUrl: "",
+    liveUrl: "https://repo-pilot-black.vercel.app/",
     repoUrl: "https://github.com/chrismarquezz/RepoPilot",
     image: repopilotImage,
     gif: null,

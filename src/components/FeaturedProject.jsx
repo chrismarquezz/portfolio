@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import Tooltip from "./Tooltip";
 
 export default function FeaturedProject({ project, index, onClick }) {
   const imageLeft = index % 2 === 0;
@@ -92,26 +93,30 @@ export default function FeaturedProject({ project, index, onClick }) {
           className={`flex gap-4 ${imageLeft ? "justify-end" : "justify-start"}`}
         >
           {project.repoUrl && (
-            <a
-              href={project.repoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
-              aria-label={`${project.title} GitHub repository`}
-            >
-              <FaGithub size={20} />
-            </a>
+            <Tooltip label="Repository">
+              <a
+                href={project.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                aria-label={`${project.title} GitHub repository`}
+              >
+                <FaGithub size={20} />
+              </a>
+            </Tooltip>
           )}
           {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
-              aria-label={`${project.title} live demo`}
-            >
-              <FaExternalLinkAlt size={18} />
-            </a>
+            <Tooltip label="Live Demo">
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200"
+                aria-label={`${project.title} live demo`}
+              >
+                <FaExternalLinkAlt size={18} />
+              </a>
+            </Tooltip>
           )}
         </div>
       </div>
