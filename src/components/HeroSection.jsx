@@ -26,7 +26,7 @@ export default function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
       >
-        Software Engineer | M.S. in CS @ Georgia Tech
+        Software Engineer
       </motion.p>
 
       <motion.div
